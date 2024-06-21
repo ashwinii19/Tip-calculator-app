@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SPLI<br>TTER</h1>
+        <div class="calculator">
+            <div class="bill-section">
+                <label for="bill">Bill $</label>
+                <input type="number" id="bill" for="Bill" placeholder="$">
+            </div>
+            <div class="tip-section">
+                <label for="tip">Select Tip %</label>
+                <div class="tip-buttons">
+                    <button class="tip-button" id="5">5%</button>
+                    <button class="tip-button" id="10">10%</button>
+                    <button class="tip-button" id="15">15%</button>
+                    <button class="tip-button" id="25">25%</button>
+                    <button class="tip-button" id="50">50%</button>
+                    <button class="tip-button" id="custom">Custom</button>
+                </div>
+            </div>
+            <div class="people-section">
+                <label for="people">Number of People</label>
+                <div class="people-input">
+                    <span class="icon">👥</span>
+                    <input type="number" id="people" value="0" min="0">
+                </div>
+            </div>
+            <div class="results-section">
+                <div class="tip-amount">
+                    <label for="tip-amount">Tip Amount</label>
+                    <span>/ person</span>
+                    <div id="tip-amount">$0.00</div>
+                </div>
+                <div class="total">
+                    <label for="total">Total</label>
+                    <span>/ person</span>
+                    <div id="total">$0.00</div>
+                </div>
+                <button id="reset" class="reset-button">RESET</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/ashwini-dagale-856515194/">Ashwini Dagale</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
